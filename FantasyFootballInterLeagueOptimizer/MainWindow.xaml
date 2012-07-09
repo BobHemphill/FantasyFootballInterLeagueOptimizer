@@ -1,0 +1,12 @@
+﻿<Window x:Class="FantasyFootballInterLeagueOptimizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Request Auth" Height="23" HorizontalAlignment="Left" Margin="12,13,0,0" Name="requestAuthButton" VerticalAlignment="Top" Width="101" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="284,14,0,0" Name="verifierTextBox" VerticalAlignment="Top" Width="207" />
+        <Button Content="Get Token" Height="23" HorizontalAlignment="Left" Margin="384,43,0,0" Name="getTokenButton" VerticalAlignment="Top" Width="104" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="16,45,0,0" Name="authTextBox" VerticalAlignment="Top" Width="260" />
+        <TextBox Height="163" HorizontalAlignment="Left" Margin="20,136,0,0" Name="tokenTextBox" VerticalAlignment="Top" Width="468" />
+    </Grid>
+</Window>
