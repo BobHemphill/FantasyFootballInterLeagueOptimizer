@@ -88,7 +88,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,7 +98,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\lib\OAuth\OAuth.csproj">
+    <ProjectReference Include="..\OAuth\OAuth.csproj">
       <Project>{F52D5DBE-FE17-4FDD-959C-C714DDFE00D0}</Project>
       <Name>OAuth</Name>
     </ProjectReference>

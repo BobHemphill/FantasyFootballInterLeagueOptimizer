@@ -32,6 +32,7 @@ namespace FantasyFootballInterLeagueOptimizer {
         void getTokenButton_Click(object sender, RoutedEventArgs e) {
             var bobURL = auth.GenerateGetTokenURL(verifierTextBox.Text);
             var response = MakeRequest(bobURL);
+            auth.SetTokenProperties(response);
             tokenTextBox.Text = response;
         }
 
@@ -49,6 +50,13 @@ namespace FantasyFootballInterLeagueOptimizer {
             Stream resStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(resStream);
             return reader.ReadToEnd();
+        }
+
+        private void refreshTokenBtn_Click(object sender, RoutedEventArgs e) {
+            var bobURL = auth.GenerateRefreshGetTokenURL();
+            var response = MakeRequest(bobURL);
+            auth.SetTokenProperties(response);
+            tokenTextBox.Text = response;
         }
     }
 }

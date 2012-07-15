@@ -1,2 +1,11 @@
 FantasyFootballInterLeagueOptimizer/bin
 FantasyFootballInterLeagueOptimizer/obj
+
+Configuration/bin
+Configuration/obj
+
+ConfigurationTests/bin
+ConfigurationTests/obj
+
+OAuth/bin
+OAuth/obj
